@@ -1,4 +1,4 @@
-# Hubot
+# hsbot
 
 hsbot is a version of GitHub's chat bot, hubot. It's pretty cool.
 
@@ -6,19 +6,18 @@ This version is designed to be deployed on [Heroku][heroku]. This README was gen
 
 [heroku]: http://www.heroku.com
 
-### Testing Hubot Locally
+### testing locally
 
-You can test your hubot by running the following.
+You can test hubot by running the following:
 
     % bin/hubot
 
 You'll see some start up output about where your scripts come from and a
 prompt.
 
-    [Sun, 04 Dec 2011 18:41:11 GMT] INFO Loading adapter shell
-    [Sun, 04 Dec 2011 18:41:11 GMT] INFO Loading scripts from /home/tomb/Development/hubot/scripts
-    [Sun, 04 Dec 2011 18:41:11 GMT] INFO Loading scripts from /home/tomb/Development/hubot/src/scripts
-    Hubot>
+    ❯ bin/hubot
+    Hubot> [Mon Jun 30 2014 11:52:35 GMT-0400 (EDT)] WARNING The HUBOT_AUTH_ADMIN environment variable not set
+    [Mon Jun 30 2014 11:52:35 GMT-0400 (EDT)] ERROR [Error: Redis connection to localhost:6379 failed - connect ECONNREFUSED]
 
 Then you can interact with hubot by typing `hubot help`.
 
