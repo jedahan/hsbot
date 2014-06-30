@@ -99,9 +99,8 @@ name as a double quoted string to the `external-scripts.json` file in this repo.
 
 ## Deployment
 
-    % heroku create --stack cedar
+    % heroku create
     % git push heroku master
-    % heroku ps:scale app=1
 
 If your Heroku account has been verified you can run the following to enable
 and add the Redis to Go addon to your app.
@@ -141,5 +140,4 @@ links to other adapters can be found on [Hubot Adapters][hubot-adapters].
 
 ## Restart the bot
 
-You may want to get comfortable with `heroku logs` and `heroku restart`
-if you're having issues.
+You may want to get comfortable with `heroku logs` and `heroku restart` if you're having issues.
