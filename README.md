@@ -1,6 +1,6 @@
 # Hubot
 
-This is a version of GitHub's Campfire bot, hubot. He's pretty cool.
+hsbot is a version of GitHub's chat bot, hubot. It's pretty cool.
 
 This version is designed to be deployed on [Heroku][heroku]. This README was generated for you by hubot to help get you started. Definitely update and improve to talk about your own instance, how to use and deploy, what functionality he has, etc!
 
@@ -127,27 +127,16 @@ Please check out the [deploying hubot onto UNIX][deploy-unix] and
 [deploy-unix]: https://github.com/github/hubot/blob/master/docs/deploying/unix.md
 [deploy-windows]: https://github.com/github/hubot/blob/master/docs/deploying/unix.md
 
-## Campfire Variables
+## Environment Variables
 
-If you are using the Campfire adapter you will need to set some environment
-variables. Refer to the documentation for other adapters and the configuraiton
-of those, links to the adapters can be found on [Hubot Adapters][hubot-adapters].
+hsbot is using the irc adapter, so we set a few variables while testing. mainly:
 
-Create a separate Campfire user for your bot and get their token from the web
-UI.
+heroku config:set HUBOT_IRC_SERVER=irc.freenode.net
+heroku config:set HUBOT_IRC_ROOMS="#hsbot"
+heroku config:set HUBOT_IRC_NICK="hsbot"
+heroku config:set HUBOT_IRC_UNFLOOD="true"
 
-    % heroku config:set HUBOT_CAMPFIRE_TOKEN="..."
-
-Get the numeric IDs of the rooms you want the bot to join, comma delimited. If
-you want the bot to connect to `https://mysubdomain.campfirenow.com/room/42` 
-and `https://mysubdomain.campfirenow.com/room/1024` then you'd add it like this:
-
-    % heroku config:set HUBOT_CAMPFIRE_ROOMS="42,1024"
-
-Add the subdomain hubot should connect to. If you web URL looks like
-`http://mysubdomain.campfirenow.com` then you'd add it like this:
-
-    % heroku config:set HUBOT_CAMPFIRE_ACCOUNT="mysubdomain"
+links to other adapters can be found on [Hubot Adapters][hubot-adapters].
 
 [hubot-adapters]: https://github.com/github/hubot/blob/master/docs/adapters.md
 
