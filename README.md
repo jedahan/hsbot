@@ -2,9 +2,10 @@
 
 hsbot is a version of GitHub's chat bot, hubot. It's pretty cool.
 
-This version is designed to be deployed on [Heroku][heroku]. This README was generated for you by hubot to help get you started. Definitely update and improve to talk about your own instance, how to use and deploy, what functionality he has, etc!
+hsbot can tell you how long until #hackerschool round 2 starts, just ask
 
-[heroku]: http://www.heroku.com
+    hsbot, countdown
+    hsbot> 20 days, 22 hours, 14 minutes
 
 ### testing locally
 
